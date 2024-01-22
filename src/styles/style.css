@@ -1,56 +1,64 @@
 * {
     color: #032436;
     font-family: Pridi;
-  }
-  body {
+}
+body {
     background-color: #FFE1AA;
     background-image: url("../pictures/header.jpg");
     background-size: cover;
-  }
-  
-  .header {
+}
+
+.header {
     display: flex;
     justify-content: center;
-  }
-  .header h1 {
+    align-items: center;
+    padding: 0;
+}
+.header a {
+    text-decoration: none;
+}
+.header a:hover {
+    color: #28546C;
+}
+.header h1 {
     border: 5px solid transparent;
     padding: 5px;
     border-image: url("../pictures/statsdecoration.png") 30 stretch;
-    }
-  
-  .grid-container {
+}
+
+.grid-container {
     display: grid;
     grid-template-areas:
-      'header header header header '
-      'stats stats hero-general hero-general '
-      'menu footer footer footer ';
+        'header header header header'
+        'stats hero-general hero-general hero-general'
+        'menu footer footer footer';
     gap: 10px;
-  }
+}
 
-  .hero-general {
+.hero-general {
     order: 2;
-  }
+}
 
-  .stats {
+.stats {
     order: 1;
-  }
-  .stats ul {
+}
+.stats ul {
     list-style-type: none;
-  }
-  .stats li {
+}
+.stats li {
     width: 7vw;
     border: 5px solid transparent;
     padding: 5px;
     border-image: url("../pictures/statsdecoration.png") 30 stretch;
-  }
-  .stats label {
+}
+.stats label {
     font-size: 20px;
-  }
-  .stats h5 {
+}
+.stats h5 {
     font-size: 30px;
     margin: 0;
-  }
-  .stats input {
+}
+.stats input {
     width: 4vw;
-    
-  }
+
+}
