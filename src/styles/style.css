@@ -5,7 +5,6 @@
   body {
     background-color: #FFE1AA;
     background-image: url("../pictures/header.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
   }
   
@@ -14,7 +13,9 @@
     justify-content: center;
   }
   .header h1 {
-    
+    border: 5px solid transparent;
+    padding: 5px;
+    border-image: url("../pictures/statsdecoration.png") 30 stretch;
     }
   
   .grid-container {
@@ -25,9 +26,31 @@
       'menu footer footer footer ';
     gap: 10px;
   }
+
   .hero-general {
     order: 2;
   }
+
   .stats {
     order: 1;
+  }
+  .stats ul {
+    list-style-type: none;
+  }
+  .stats li {
+    width: 7vw;
+    border: 5px solid transparent;
+    padding: 5px;
+    border-image: url("../pictures/statsdecoration.png") 30 stretch;
+  }
+  .stats label {
+    font-size: 20px;
+  }
+  .stats h5 {
+    font-size: 30px;
+    margin: 0;
+  }
+  .stats input {
+    width: 4vw;
+    
   }

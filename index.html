@@ -18,7 +18,7 @@
     <div class="hero-general">
       <input type="text" id="name" placeholder="Name">
       <input type="text" id="level" placeholder="Level">
-      <input type="text" id="class" placeholder="Class"></br>
+      <input type="text" id="class" placeholder="Class"><br>
       <input type="text" id="race" placeholder="Race">
       <input type="text" id="background" placeholder="Background">
       <input type="text" id="alignment" placeholder="Alignment">
@@ -27,31 +27,42 @@
     <div class="stats">
       <ul>
         <li>
-          <label for="str">Strength</label></br>
-          <input type="text" id="str">
+          <label for="str"><strong>Strength</strong></label><br>
+          <h5 id="strModifier">0</h5>
+          <input type="number" id="str" oninput="calculateModifier(this.value, 'strModifier')">
          </li>
          <li>
-          <label for="dex">Dexterity</label></br>
-          <input type="text" id="dex">
+          <label for="dex"><strong>Dexterity</strong></label><br>
+          <h5 id="dexModifier">0</h5>
+          <input type="number" id="dex" oninput="calculateModifier(this.value, 'dexModifier')">
          </li>
          <li>
-          <label for="con">Constitution</label></br>
-          <input type="text" id="con">
+          <label for="con"><strong>Constitution</strong></label><br>
+          <h5 id="conModifier">0</h5>
+          <input type="number" id="con" oninput="calculateModifier(this.value, 'conModifier')">
          </li>
          <li>
-          <label for="int">Intelligence</label></br>
-          <input type="text" id="int">
+          <label for="int"><strong>Intelligence</strong></label><br>
+          <h5 id="intModifier">0</h5>
+          <input type="number" id="int" oninput="calculateModifier(this.value, 'intModifier')">
          </li>
          <li>
-           <label for="wis">Wisdom</label></br>
-           <input type="text" id="wis">
+           <label for="wis"><strong>Wisdom</strong></label><br>
+           <h5 id="wisModifier">0</h5>
+           <input type="number" id="wis" oninput="calculateModifier(this.value, 'wisModifier')">
          </li>
          <li>
-           <label for="cha">Charisma</label></br>
-           <input type="text" id="cha">
+           <label for="cha"><strong>Charisma</strong></label><br>
+           <h5 id="chaModifier">0</h5>
+           <input type="number" id="cha" oninput="calculateModifier(this.value, 'chaModifier')">
          </li>
       </ul>
     </div>
+    <div class="skills">
+
+    </div>
   </div>
+  
+  <script language="javascript" type="text/javascript" src="src/javascript/index.js"></script>
 </body>
 </html>
