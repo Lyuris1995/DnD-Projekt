@@ -3,9 +3,12 @@
     font-family: Pridi;
 }
 body {
+    margin: 0;
     background-color: #FFE1AA;
     background-image: url("../pictures/header.jpg");
-    background-size: cover;
+    background-size: cover; 
+    border: 5px solid transparent;
+    border-image: url("../pictures/statsdecoration.png") 60 stretch;
 }
 
 .header {
