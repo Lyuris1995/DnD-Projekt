@@ -1,0 +1,33 @@
+* {
+    color: #032436;
+    font-family: Pridi;
+  }
+  body {
+    background-color: #FFE1AA;
+    background-image: url("../pictures/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+  .header h1 {
+    
+    }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header '
+      'stats stats hero-general hero-general '
+      'menu footer footer footer ';
+    gap: 10px;
+  }
+  .hero-general {
+    order: 2;
+  }
+  .stats {
+    order: 1;
+  }
