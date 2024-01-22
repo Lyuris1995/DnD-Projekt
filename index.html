@@ -16,13 +16,20 @@
   </div>
   <div class="grid-container">
     <div class="hero-general">
+      <label for="name"><strong>Name</strong></label>
       <input type="text" id="name" placeholder="Name">
-      <input type="text" id="level" placeholder="Level">
-      <input type="text" id="class" placeholder="Class"><br>
-      <input type="text" id="race" placeholder="Race">
+      <label for="level"><strong>Level</strong></label>
+      <input type="number" min="1" max="20" id="level" placeholder="Level">
+      <label for="class"><strong>Class</strong></label>
+      <input type="text" id="class" placeholder="Class">
+      <label for="race"><strong>Race</strong></label>
+      <input type="text" id="race" placeholder="Race"><br>
+      <label for="background"><strong>Background</strong></label>
       <input type="text" id="background" placeholder="Background">
+      <label for="alignment"><strong>Alignment</strong></label>
       <input type="text" id="alignment" placeholder="Alignment">
-      <input type="text" id="experience" placeholder="Experience Points">
+      <label for="experience"><strong>Experience Points</strong></label>
+      <input type="number" id="experience" placeholder="Experience Points" oninput="calculateLevel()">
     </div>
     <div class="stats">
       <ul>
